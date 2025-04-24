@@ -1,0 +1,102 @@
+const defaultOptions = [{
+  label: "system_keyboard_lock",
+  key: MenuEnum.LOCK,
+  icon: renderIcon(LockClosedOutlineIcon),
+  fnHandle: chartEditStore.setLock
+}, {
+  label: "system_keyboard_Unlock",
+  key: MenuEnum.UNLOCK,
+  icon: renderIcon(LockOpenOutlineIcon),
+  fnHandle: chartEditStore.setUnLock
+}, {
+  label: "system_keyboard_hide",
+  key: MenuEnum.HIDE,
+  icon: renderIcon(EyeOffOutlineIcon),
+  fnHandle: chartEditStore.setHide
+}, {
+  label: "system_keyboard_display",
+  key: MenuEnum.SHOW,
+  icon: renderIcon(EyeOutlineIcon),
+  fnHandle: chartEditStore.setShow
+}, {
+  type: "divider",
+  key: "d0"
+}, {
+  label: "system_keyboard_copy",
+  key: MenuEnum.COPY,
+  icon: renderIcon(CopyIcon),
+  fnHandle: chartEditStore.setCopy
+}, {
+  label: "system_keyboard_cut",
+  key: MenuEnum.CUT,
+  icon: renderIcon(CutIcon),
+  fnHandle: chartEditStore.setCut
+}, {
+  label: "system_keyboard_paste",
+  key: MenuEnum.PARSE,
+  icon: renderIcon(ClipboardOutlineIcon),
+  fnHandle: chartEditStore.setParse
+}, {
+  type: "divider",
+  key: "d1"
+}, {
+  label: "system_keyboard_Top_up",
+  key: MenuEnum.TOP,
+  icon: renderIcon(UpToTopIcon),
+  fnHandle: chartEditStore.setTop
+}, {
+  label: "system_keyboard_Bottom_up",
+  key: MenuEnum.BOTTOM,
+  icon: renderIcon(DownToBottomIcon),
+  fnHandle: chartEditStore.setBottom
+}, {
+  label: "system_keyboard_move_up",
+  key: MenuEnum.UP,
+  icon: renderIcon(ChevronUpIcon),
+  fnHandle: chartEditStore.setUp
+}, {
+  label: "system_keyboard_Move_Down",
+  key: MenuEnum.DOWN,
+  icon: renderIcon(ChevronDownIcon),
+  fnHandle: chartEditStore.setDown
+}, {
+  type: "divider",
+  key: "d2"
+}, {
+  label: "system_keyboard_clear_clipboard",
+  key: MenuEnum.CLEAR,
+  icon: renderIcon(PaintBrushIcon),
+  fnHandle: chartEditStore.setRecordChart
+}, {
+  label: "system_keyboard_delete",
+  key: MenuEnum.DELETE,
+  icon: renderIcon(TrashIcon),
+  fnHandle: chartEditStore.removeComponentList
+}, {
+  label: "system_keyboard_Create_a_group",
+  key: MenuEnum.GROUP,
+  icon: renderIcon(Carbon3DSoftwareIcon),
+  fnHandle: chartEditStore.setGroup
+}, {
+  label: "system_keyboard_Unbrouping",
+  key: MenuEnum.UN_GROUP,
+  icon: renderIcon(Carbon3DCursorIcon),
+  fnHandle: chartEditStore.setUnGroup
+}];
+const newIndependentObject = {
+  "system_keyboard_lock": "锁定",
+  "system_keyboard_Unlock": "解锁",
+  "system_keyboard_hide": "隐藏",
+  "system_keyboard_display": "显示",
+  "system_keyboard_copy": "复制",
+  "system_keyboard_cut": "剪切",
+  "system_keyboard_paste": "粘贴",
+  "system_keyboard_Top_up": "置顶",
+  "system_keyboard_Bottom_up": "置底",
+  "system_keyboard_move_up": "上移",
+  "system_keyboard_Move_Down": "下移",
+  "system_keyboard_clear_clipboard": "清空剪贴板",
+  "system_keyboard_delete": "删除",
+  "system_keyboard_Create_a_group": "创建分组",
+  "system_keyboard_Unbrouping": "解除分组"
+};
